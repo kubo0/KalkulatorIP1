@@ -129,6 +129,7 @@ namespace KalkulatorIP1
             this.FirstHostTextBox1.Location = new System.Drawing.Point(118, 73);
             this.FirstHostTextBox1.Mask = "###\\.###\\.###\\.###";
             this.FirstHostTextBox1.Name = "FirstHostTextBox1";
+            this.FirstHostTextBox1.ReadOnly = true;
             this.FirstHostTextBox1.Size = new System.Drawing.Size(100, 23);
             this.FirstHostTextBox1.TabIndex = 11;
             // 
@@ -146,6 +147,7 @@ namespace KalkulatorIP1
             this.LastHostTextBox1.Location = new System.Drawing.Point(224, 73);
             this.LastHostTextBox1.Mask = "###\\.###\\.###\\.###";
             this.LastHostTextBox1.Name = "LastHostTextBox1";
+            this.LastHostTextBox1.ReadOnly = true;
             this.LastHostTextBox1.Size = new System.Drawing.Size(100, 23);
             this.LastHostTextBox1.TabIndex = 13;
             // 

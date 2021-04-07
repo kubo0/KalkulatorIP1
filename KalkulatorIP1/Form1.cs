@@ -31,10 +31,21 @@ namespace KalkulatorIP1
             byte[] ip = ipAddress.GetAddressBytes();
             byte[] mask = maskAddress.GetAddressBytes();
             IPNetwork network = IPNetwork.Parse(ipAddress.ToString(), maskAddress.ToString());
-            LastIPTextBox1.Text = network.Network.ToString();
-            BroadcastTextBox1.Text = network.Broadcast.ToString();
-            FirstHostTextBox1.Text = network.FirstUsable.ToString();
-            LastHostTextBox1.Text = network.LastUsable.ToString();
+            
+            String AdresSieci = network.Network.ToString();
+            AdresSieci = rgx.Replace(AdresSieci, ".");
+            String AdresRozgłoszeniowy = network.Broadcast.ToString();
+            AdresRozgłoszeniowy = rgx.Replace(AdresRozgłoszeniowy, ".");
+            String PierwszyAdres = network.FirstUsable.ToString();
+            PierwszyAdres = rgx.Replace(PierwszyAdres, ".");
+            String OstatniAdres = network.LastUsable.ToString();
+            OstatniAdres = rgx.Replace(OstatniAdres, ".");
+
+            LastIPTextBox1.Text = AdresSieci; //network.Network.ToString();
+            BroadcastTextBox1.Text = AdresRozgłoszeniowy; //network.Broadcast.ToString();
+            FirstHostTextBox1.Text = PierwszyAdres; //network.FirstUsable.ToString();
+            LastHostTextBox1.Text = OstatniAdres; //network.LastUsable.ToString();
+            
             // byte[] reversedMask = maskAddress.GetAddressBytes();
             // byte[] network = new byte[4];
             // byte[] broadcast = new byte[4];
