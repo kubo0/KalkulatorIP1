@@ -91,7 +91,6 @@ namespace KalkulatorIP1
             // LastIPTextBox1
             // 
             this.LastIPTextBox1.Location = new System.Drawing.Point(224, 27);
-            this.LastIPTextBox1.Mask = "###\\.###\\.###\\.###";
             this.LastIPTextBox1.Name = "LastIPTextBox1";
             this.LastIPTextBox1.ReadOnly = true;
             this.LastIPTextBox1.Size = new System.Drawing.Size(100, 23);
@@ -109,7 +108,6 @@ namespace KalkulatorIP1
             // BroadcastTextBox1
             // 
             this.BroadcastTextBox1.Location = new System.Drawing.Point(330, 27);
-            this.BroadcastTextBox1.Mask = "###\\.###\\.###\\.###";
             this.BroadcastTextBox1.Name = "BroadcastTextBox1";
             this.BroadcastTextBox1.ReadOnly = true;
             this.BroadcastTextBox1.Size = new System.Drawing.Size(100, 23);
@@ -127,7 +125,6 @@ namespace KalkulatorIP1
             // FirstHostTextBox1
             // 
             this.FirstHostTextBox1.Location = new System.Drawing.Point(118, 73);
-            this.FirstHostTextBox1.Mask = "###\\.###\\.###\\.###";
             this.FirstHostTextBox1.Name = "FirstHostTextBox1";
             this.FirstHostTextBox1.ReadOnly = true;
             this.FirstHostTextBox1.Size = new System.Drawing.Size(100, 23);
@@ -145,7 +142,6 @@ namespace KalkulatorIP1
             // LastHostTextBox1
             // 
             this.LastHostTextBox1.Location = new System.Drawing.Point(224, 73);
-            this.LastHostTextBox1.Mask = "###\\.###\\.###\\.###";
             this.LastHostTextBox1.Name = "LastHostTextBox1";
             this.LastHostTextBox1.ReadOnly = true;
             this.LastHostTextBox1.Size = new System.Drawing.Size(100, 23);

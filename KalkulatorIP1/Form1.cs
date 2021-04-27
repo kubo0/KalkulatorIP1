@@ -33,44 +33,14 @@ namespace KalkulatorIP1
             IPNetwork network = IPNetwork.Parse(ipAddress.ToString(), maskAddress.ToString());
             
             String AdresSieci = network.Network.ToString();
-            AdresSieci = rgx.Replace(AdresSieci, ".");
             String AdresRozgłoszeniowy = network.Broadcast.ToString();
-            AdresRozgłoszeniowy = rgx.Replace(AdresRozgłoszeniowy, ".");
             String PierwszyAdres = network.FirstUsable.ToString();
-            PierwszyAdres = rgx.Replace(PierwszyAdres, ".");
             String OstatniAdres = network.LastUsable.ToString();
-            OstatniAdres = rgx.Replace(OstatniAdres, ".");
 
-            LastIPTextBox1.Text = AdresSieci; //network.Network.ToString();
-            BroadcastTextBox1.Text = AdresRozgłoszeniowy; //network.Broadcast.ToString();
-            FirstHostTextBox1.Text = PierwszyAdres; //network.FirstUsable.ToString();
-            LastHostTextBox1.Text = OstatniAdres; //network.LastUsable.ToString();
-            
-            // byte[] reversedMask = maskAddress.GetAddressBytes();
-            // byte[] network = new byte[4];
-            // byte[] broadcast = new byte[4];
-            // for (int i = 0; i < 4; i++)
-            // {
-            //     network[i] = (byte)(ip[i] & mask[i]);
-            //     reversedMask[i] = (byte)~mask[i];
-            //     broadcast[i] = (byte)(network[i] | reversedMask[i]);
-            // }
-            // //Array.Copy(network, broadcast, 4);
-            // string networkAddressString = "";
-            // string broadcastAddressString = "";
-            // for (int i = 0; i < 4; i++)
-            // {
-            //     //network
-            //     String ipFragment = network[i].ToString();
-            //     ipFragment = ipFragment.PadLeft(3, '0');
-            //     networkAddressString += ipFragment;
-            //     //broadcast
-            //     ipFragment = broadcast[i].ToString();
-            //     ipFragment = ipFragment.PadLeft(3, '0');
-            //     broadcastAddressString += ipFragment;
-            // }
-            // LastIPTextBox1.Text = networkAddressString;
-            // BroadcastTextBox1.Text = broadcastAddressString;
+            LastIPTextBox1.Text = AdresSieci;
+            BroadcastTextBox1.Text = AdresRozgłoszeniowy;
+            FirstHostTextBox1.Text = PierwszyAdres;
+            LastHostTextBox1.Text = OstatniAdres;
         }
     }
 }
